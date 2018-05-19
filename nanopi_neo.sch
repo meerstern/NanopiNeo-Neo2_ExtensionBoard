@@ -1,0 +1,363 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ds1307
+LIBS:nanopi_neo-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "nanopi neo extension board"
+Date "2018-05-02"
+Rev "v1.0"
+Comp "Crescent"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X12 P2
+U 1 1 5AE92C77
+P 2450 1725
+F 0 "P2" H 2450 2375 50  0000 C CNN
+F 1 "CONN_01X12" V 2550 1725 50  0000 C CNN
+F 2 "pin-head:pinhead-1X12" H 2450 1725 50  0001 C CNN
+F 3 "" H 2450 1725 50  0000 C CNN
+	1    2450 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X12 P4
+U 1 1 5AE92CF3
+P 3700 1750
+F 0 "P4" H 3700 2400 50  0000 C CNN
+F 1 "CONN_02X12" V 3700 1750 50  0000 C CNN
+F 2 "pin-head:pinhead-2X12" H 3700 550 50  0001 C CNN
+F 3 "" H 3700 550 50  0000 C CNN
+	1    3700 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USB_A P1
+U 1 1 5AE92D93
+P 2250 3175
+F 0 "P1" H 2450 2975 50  0000 C CNN
+F 1 "USB_A" H 2200 3375 50  0000 C CNN
+F 2 "USBHOST:USBHOST" V 2200 3075 50  0001 C CNN
+F 3 "" V 2200 3075 50  0000 C CNN
+	1    2250 3175
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A P3
+U 1 1 5AE92DEA
+P 3050 3200
+F 0 "P3" H 3250 3000 50  0000 C CNN
+F 1 "USB_A" H 3000 3400 50  0000 C CNN
+F 2 "USBHOST:USBHOST" V 3000 3100 50  0001 C CNN
+F 3 "" V 3000 3100 50  0000 C CNN
+	1    3050 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X04 P5
+U 1 1 5AE92E1D
+P 4200 3225
+F 0 "P5" H 4200 3475 50  0000 C CNN
+F 1 "CONN_01X04" V 4300 3225 50  0000 C CNN
+F 2 "GroveCon:GROVE" H 4200 3225 50  0001 C CNN
+F 3 "" H 4200 3225 50  0000 C CNN
+	1    4200 3225
+	1    0    0    -1  
+$EndComp
+Text Label 3625 3075 0    60   ~ 0
+SCL
+Text Label 3625 3175 0    60   ~ 0
+SDA
+Text Label 3625 3275 0    60   ~ 0
+3.3V
+Text Label 3625 3375 0    60   ~ 0
+GND
+Text Label 3150 3650 0    60   ~ 0
+GND
+Text Label 2350 3650 0    60   ~ 0
+GND
+Wire Wire Line
+	4000 3075 3625 3075
+Wire Wire Line
+	4000 3175 3625 3175
+Wire Wire Line
+	4000 3275 3625 3275
+Wire Wire Line
+	4000 3375 3625 3375
+Wire Wire Line
+	3150 3500 3150 3650
+Wire Wire Line
+	2350 3475 2350 3650
+Wire Wire Line
+	1950 3275 1950 3500
+Wire Wire Line
+	1950 3500 2350 3500
+Connection ~ 2350 3500
+Wire Wire Line
+	2750 3300 2750 3525
+Wire Wire Line
+	2750 3525 3150 3525
+Connection ~ 3150 3525
+Wire Wire Line
+	1950 2975 1675 2975
+Wire Wire Line
+	1950 3075 1675 3075
+Wire Wire Line
+	1950 3175 1675 3175
+Wire Wire Line
+	2750 3000 2550 3000
+Wire Wire Line
+	2750 3100 2550 3100
+Wire Wire Line
+	2750 3200 2550 3200
+Text Label 2550 3000 0    60   ~ 0
+5V
+Text Label 2550 3100 0    60   ~ 0
+DM2
+Text Label 2550 3200 0    60   ~ 0
+DP2
+Text Label 1675 2975 0    60   ~ 0
+5V
+Text Label 1675 3075 0    60   ~ 0
+DM1
+Text Label 1675 3175 0    60   ~ 0
+DP1
+Wire Wire Line
+	2250 1175 1950 1175
+Wire Wire Line
+	2250 1275 1950 1275
+Wire Wire Line
+	2250 1375 1950 1375
+Wire Wire Line
+	2250 1475 1950 1475
+Wire Wire Line
+	2250 1575 1950 1575
+Wire Wire Line
+	2250 2275 1925 2275
+Text Label 1950 1175 0    60   ~ 0
+5V
+Text Label 1950 1375 0    60   ~ 0
+DM1
+Text Label 1950 1275 0    60   ~ 0
+DP1
+Text Label 1950 1475 0    60   ~ 0
+DP2
+Text Label 1950 1575 0    60   ~ 0
+DM2
+Text Label 1925 2275 0    60   ~ 0
+GND
+NoConn ~ 2250 1675
+NoConn ~ 2250 1775
+NoConn ~ 2250 1875
+NoConn ~ 2250 1975
+NoConn ~ 2250 2075
+NoConn ~ 2250 2175
+Wire Wire Line
+	3450 1200 3150 1200
+Wire Wire Line
+	3450 1300 3150 1300
+Wire Wire Line
+	3450 1400 3150 1400
+Wire Wire Line
+	3450 1600 3150 1600
+Wire Wire Line
+	3950 1400 4275 1400
+Wire Wire Line
+	3950 2100 4300 2100
+Wire Wire Line
+	3950 1800 4300 1800
+Text Label 3150 1600 0    60   ~ 0
+GND
+Text Label 4275 1400 0    60   ~ 0
+GND
+Text Label 4300 1800 0    60   ~ 0
+GND
+Text Label 4300 2100 0    60   ~ 0
+GND
+Text Label 3150 1200 0    60   ~ 0
+3.3V
+Text Label 3150 1400 0    60   ~ 0
+SCL
+Text Label 3150 1300 0    60   ~ 0
+SDA
+NoConn ~ 3450 1500
+NoConn ~ 3950 1500
+NoConn ~ 3950 1600
+NoConn ~ 3950 1700
+NoConn ~ 3950 1900
+NoConn ~ 3950 2000
+NoConn ~ 3450 1700
+NoConn ~ 3450 1800
+NoConn ~ 3450 1900
+NoConn ~ 3450 2000
+NoConn ~ 3450 2100
+NoConn ~ 3450 2200
+NoConn ~ 3450 2300
+NoConn ~ 3950 2300
+NoConn ~ 3950 2200
+$Comp
+L Battery BT1
+U 1 1 5AE94E6C
+P 4975 3425
+F 0 "BT1" H 5075 3475 50  0000 L CNN
+F 1 "Battery" H 5075 3375 50  0000 L CNN
+F 2 "CR1220:CR1220" V 4975 3465 50  0001 C CNN
+F 3 "" V 4975 3465 50  0000 C CNN
+	1    4975 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 5AE94E97
+P 4975 3000
+F 0 "Y1" H 4975 3150 50  0000 C CNN
+F 1 "Crystal" H 4975 2850 50  0000 C CNN
+F 2 "LSE:ECS-31B_xtal" H 4975 3000 50  0001 C CNN
+F 3 "" H 4975 3000 50  0000 C CNN
+	1    4975 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5AE94ECA
+P 5700 3975
+F 0 "R1" V 5780 3975 50  0000 C CNN
+F 1 "R" V 5700 3975 50  0000 C CNN
+F 2 "smt:R-0603" V 5630 3975 50  0001 C CNN
+F 3 "" H 5700 3975 50  0000 C CNN
+	1    5700 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5AE94EF3
+P 6475 2925
+F 0 "C1" H 6500 3025 50  0000 L CNN
+F 1 "0.1u" H 6575 2925 50  0000 L CNN
+F 2 "smt:C-0603" H 6513 2775 50  0001 C CNN
+F 3 "" H 6475 2925 50  0000 C CNN
+	1    6475 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L DS1307 U1
+U 1 1 5AE95099
+P 5575 2975
+F 0 "U1" H 5575 2975 60  0000 C CNN
+F 1 "DS1307" H 5575 3075 60  0000 C CNN
+F 2 "smt-soic:8" H 5575 2975 60  0001 C CNN
+F 3 "" H 5575 2975 60  0000 C CNN
+	1    5575 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 3175 5375 3175
+Wire Wire Line
+	4975 3175 4975 3150
+Wire Wire Line
+	5375 3075 5200 3075
+Wire Wire Line
+	5200 3075 5200 2825
+Wire Wire Line
+	5200 2825 4975 2825
+Wire Wire Line
+	4975 2825 4975 2850
+Wire Wire Line
+	5375 3275 4975 3275
+Wire Wire Line
+	5375 3375 5375 3575
+Wire Wire Line
+	5375 3575 4975 3575
+Text Label 5375 3575 0    60   ~ 0
+GND
+Text Label 6175 3275 0    60   ~ 0
+SCL
+Text Label 6175 3375 0    60   ~ 0
+SDA
+Text Label 6175 3075 0    60   ~ 0
+5V
+Text Label 6475 3075 0    60   ~ 0
+GND
+Text Label 6475 2775 0    60   ~ 0
+5V
+$Comp
+L R R3
+U 1 1 5AE96F6F
+P 6800 3025
+F 0 "R3" V 6880 3025 50  0000 C CNN
+F 1 "4.7k" V 6800 3025 50  0000 C CNN
+F 2 "smt:R-0603" V 6730 3025 50  0001 C CNN
+F 3 "" H 6800 3025 50  0000 C CNN
+	1    6800 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6175 3175 6800 3175
+Text Label 6800 2875 0    60   ~ 0
+5V
+$Comp
+L R R2
+U 1 1 5AE97A44
+P 5900 3975
+F 0 "R2" V 5980 3975 50  0000 C CNN
+F 1 "R" V 5900 3975 50  0000 C CNN
+F 2 "smt:R-0603" V 5830 3975 50  0001 C CNN
+F 3 "" H 5900 3975 50  0000 C CNN
+	1    5900 3975
+	1    0    0    -1  
+$EndComp
+Text Label 5700 3725 0    60   ~ 0
+3.3V
+Wire Wire Line
+	5700 3725 5700 3825
+Wire Wire Line
+	5700 3775 5900 3775
+Wire Wire Line
+	5900 3775 5900 3825
+Connection ~ 5700 3775
+Text Label 5700 4225 0    60   ~ 0
+SCL
+Text Label 5900 4225 0    60   ~ 0
+SDA
+Wire Wire Line
+	5900 4125 5900 4225
+Wire Wire Line
+	5700 4125 5700 4225
+NoConn ~ 3950 1300
+NoConn ~ 3950 1200
+$EndSCHEMATC

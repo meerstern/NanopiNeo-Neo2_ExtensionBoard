@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name CR1220)(type KiCad)(uri "$(KIPRJMOD)\\CR1220.pretty")(options "")(descr ""))
+  (lib (name GroveCon)(type KiCad)(uri "$(KIPRJMOD)\\GroveCon.pretty")(options "")(descr ""))
+  (lib (name LSE)(type KiCad)(uri "$(KIPRJMOD)\\LSE.pretty")(options "")(descr ""))
+  (lib (name USBHOST)(type KiCad)(uri "$(KIPRJMOD)\\USBHOST.pretty")(options "")(descr ""))
+)
