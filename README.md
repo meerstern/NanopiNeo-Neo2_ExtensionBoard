@@ -38,7 +38,18 @@ The extension board of Kicad Files for Nano Pi Neo/Neo2 with USB and RTC, grove 
   
   1. 起動時の時刻のRTCからの読み込み<br>
   ```sudo hwclock -r -f /dev/rtc*```  
-  *は1、2...といった数字が入ります。機器によって異なります。  
+  *は1、2...といった数字が入ります。機器によって異なります。 
+  
+## NanoPi Neo/Neo2拡張ボード使用例
+
+<img src="https://raw.githubusercontent.com/meerstern/NanopiNeo-Neo2_ExtensionBoard/master/img/IMG_1.JPG" width="360">
+
+<img src="https://raw.githubusercontent.com/meerstern/NanopiNeo-Neo2_ExtensionBoard/master/img/IMG_2.JPG" width="360">
+
+<img src="https://raw.githubusercontent.com/meerstern/NanopiNeo-Neo2_ExtensionBoard/master/img/IMG_3.JPG" width="360">
+
+　ピンヘッダは別売、別途はんだ付けが必要です。
+ 
  
 ## NanoPi Neo/Neo2拡張ボード注意点
   * NanoPi Neo/Neo2のGPIO1、GPIO2に接続するためのピンヘッダは別売りです。
