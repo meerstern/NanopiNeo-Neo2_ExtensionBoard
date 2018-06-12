@@ -29,7 +29,8 @@ The extension board of Kicad Files for Nano Pi Neo/Neo2 with USB and RTC, grove 
   ```sudo date +%T -s "19:52:00"```  
   ```sudo date +%Y%m%d -s "20180518"```  
 
-  1. RTC DS1307ドライバ読み込み  
+  1. RTC DS1307ドライバ読み込み
+  ```echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-0/new_device```
   ```sudo modprobe rtc-ds1307```
   
   1. 時刻のRTCへの書き込み<br> 
@@ -37,7 +38,7 @@ The extension board of Kicad Files for Nano Pi Neo/Neo2 with USB and RTC, grove 
   *は1、2...といった数字が入ります。機器によって異なります。  
   
   1. 起動時の時刻のRTCからの読み込み<br>
-  ```sudo hwclock -r -f /dev/rtc*```  
+  ```sudo hwclock -s -f /dev/rtc*```  
   *は1、2...といった数字が入ります。機器によって異なります。 
   
 ## NanoPi Neo/Neo2拡張ボード使用例
@@ -56,7 +57,7 @@ The extension board of Kicad Files for Nano Pi Neo/Neo2 with USB and RTC, grove 
   * 取付するピンヘッダの長さが標準的な10mmの場合、電源供給用microUSBと拡張ボードのUSBが干渉してどちらかが使用できません。<br>
  この場合は長いピンヘッダやピンコネクタを使用して干渉を回避するか、
  microUSBを使用せずにDebugUARTピンをヒートシンク横から取り出して5V電源を供給してください。
-  * RTC DS1307は電池なしで電源に接続した場合、破損する可能性があります。必ず電池を入れて使用してください。
+  * RTCは静電気等による破損防止のため、必ず電池を入れて使用してください。
 
 
  
