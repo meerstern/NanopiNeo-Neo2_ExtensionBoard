@@ -29,8 +29,8 @@ The extension board of Kicad Files for Nano Pi Neo/Neo2 with USB and RTC, grove 
   ```sudo date +%T -s "19:52:00"```  
   ```sudo date +%Y%m%d -s "20180518"```  
 
-  1. RTC DS1307ドライバ読み込み
-  ```echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-0/new_device```
+  1. RTC DS1307ドライバ読み込み<br>
+  ```echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-0/new_device```<br>
   ```sudo modprobe rtc-ds1307```
   
   1. 時刻のRTCへの書き込み<br> 
